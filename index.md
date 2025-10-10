@@ -1,9 +1,6 @@
 ---
 layout: home
-title: Portfolio
-subtitle: Robotics Software Engineer
 ---
-# Projects
 
 ## [Master Thesis: Autonomous Navigation of Multi-Robot Systems in Dynamic Warehousing and Rescue Environments](master_thesis.md)
 

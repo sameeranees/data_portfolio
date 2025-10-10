@@ -2,8 +2,7 @@ title: Portfolio
 remote_theme: "jekyll/minima@1e8a445"
 
 # Navigation
-header_pages:
-  - master_thesis.md
+header_pages: []
 
 # Social links (these will appear in the footer)
 social:
@@ -12,10 +11,3 @@ social:
     - https://github.com/sameeranees
     - https://linkedin.com/in/sameer-anees
     - mailto:sameeraneesj@gmail.com
-
-# Custom navigation
-navigation:
-  - title: "Master Thesis"
-    url: "/master_thesis/"
-  - title: "CV"
-    url: "https://sameeranees.github.io/CV/"
