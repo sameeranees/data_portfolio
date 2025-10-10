@@ -1,6 +1,4 @@
-# Projects
-
-## [Master Thesis: Autonomous Navigation of Multi-Robot Systems in Dynamic Warehousing and Rescue Environments](master_thesis.md)
+### [Master Thesis: Autonomous Navigation of Multi-Robot Systems in Dynamic Warehousing and Rescue Environments](master_thesis.md)
 
 Detailed information about the thesis is available [here](master_thesis.md)
 
@@ -22,7 +20,7 @@ A comprehensive research project comparing Deep Reinforcement Learning algorithm
 
 ---
 
-## Race Against the Machine – 5G Enabled Tele-Operated vs Automated Driving
+### Race Against the Machine – 5G Enabled Tele-Operated vs Automated Driving
 
 **Duration:** 2022-2023  
 **Technologies:** ROS 2, Python, C++, Docker  
@@ -38,7 +36,7 @@ Master's project demonstrating the robustness and low latency of 5G networks in 
 
 ---
 
-## Bachelors Capstone Project - Swiftbot – Autonomous Delivery Robot
+### Bachelors Capstone Project - Swiftbot – Autonomous Delivery Robot
 
 **Duration:** 2020-2021  
 **Technologies:** ROS, Python, OpenCV, Android  
