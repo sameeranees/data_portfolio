@@ -1,5 +1,6 @@
 ---
 layout: home
+title: 
 ---
 # Master Thesis: Autonomous Navigation of Multi-Robot Systems in Dynamic Warehousing and Rescue Environments
 
