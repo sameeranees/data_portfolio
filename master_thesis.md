@@ -62,6 +62,7 @@ Evaluate and compare different machine learning algorithms for robot navigation 
 - **Robot Configuration:** Identical sensor setup for fair comparison
 
 ![Gazebo Single Robot Environment](assets/images/single_gazebo_head.png)
+
 *Gazebo Environment for Single Robot Navigation*
 
 ![Gazebo Multi Robot Environment](assets/images/multi_gazebo_head.png)
