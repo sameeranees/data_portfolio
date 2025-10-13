@@ -128,11 +128,40 @@ Evaluate and compare different machine learning algorithms for robot navigation 
 ### Single-Robot Navigation Performance
 
 #### ISAAC Sim Results
-| Algorithm | Original | 1st Param | 2nd Param | 3rd Param |
-|-----------|----------|-----------|-----------|-----------|
-| **DQN**   | 1.6%     | 1.3%      | 3.9%      | 3.2%      |
-| **DDPG**  | 0%       | 0.2%      | 0%        | 0%        |
-| **TD3**   | 0.4%     | 0%        | 0%        | 0%        |
+<table>
+  <thead>
+    <tr>
+      <th>Algorithm</th>
+      <th>Original</th>
+      <th>1st Param</th>
+      <th>2nd Param</th>
+      <th>3rd Param</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>DQN</strong></td>
+      <td>1.6%</td>
+      <td>1.3%</td>
+      <td>3.9%</td>
+      <td>3.2%</td>
+    </tr>
+    <tr>
+      <td><strong>DDPG</strong></td>
+      <td>0%</td>
+      <td>0.2%</td>
+      <td>0%</td>
+      <td>0%</td>
+    </tr>
+    <tr>
+      <td><strong>TD3</strong></td>
+      <td>0.4%</td>
+      <td>0%</td>
+      <td>0%</td>
+      <td>0%</td>
+    </tr>
+  </tbody>
+</table>
 
 *Success rates across different parameterizations*
 
@@ -143,11 +172,32 @@ Evaluate and compare different machine learning algorithms for robot navigation 
 *Success Rate Comparison - Original Implementation*
 
 #### Gazebo Results
-| Algorithm | Randomized Goals | Fixed Goals                    |
-|-----------|------------------|--------------------------------|
-| **DQN**   | 18%              | 1.2%                           |
-| **DDPG**  | 19.5%            | 45.8% (78.4% after convergence) |
-| **TD3**   | 4.6%             | 2.72%                          |
+<table>
+  <thead>
+    <tr>
+      <th>Algorithm</th>
+      <th>Randomized Goals</th>
+      <th>Fixed Goals</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>DQN</strong></td>
+      <td>18%</td>
+      <td>1.2%</td>
+    </tr>
+    <tr>
+      <td><strong>DDPG</strong></td>
+      <td>19.5%</td>
+      <td>45.8% (78.4% after convergence)</td>
+    </tr>
+    <tr>
+      <td><strong>TD3</strong></td>
+      <td>4.6%</td>
+      <td>2.72%</td>
+    </tr>
+  </tbody>
+</table>
 
 ![Gazebo Loss Comparison](assets/images/gazebo_loss.png)
 *Training Loss Comparison in Gazebo Environment*
@@ -158,16 +208,44 @@ Evaluate and compare different machine learning algorithms for robot navigation 
 ### Multi-Robot Navigation Performance
 
 #### ISAAC Sim Multi-Robot Results
-| Algorithm    | Success Rate |
-|--------------|--------------|
-| **Multi TD3** | 0.14%        |
-| **Multi DQN** | 0%           |
+<table>
+  <thead>
+    <tr>
+      <th>Algorithm</th>
+      <th>Success Rate</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Multi TD3</strong></td>
+      <td>0.14%</td>
+    </tr>
+    <tr>
+      <td><strong>Multi DQN</strong></td>
+      <td>0%</td>
+    </tr>
+  </tbody>
+</table>
 
 #### Gazebo Multi-Robot Results
-| Algorithm     | Success Rate |
-|---------------|--------------|
-| **Multi TD3** | 0%           |
-| **Multi DDPG** | 0%           |
+<table>
+  <thead>
+    <tr>
+      <th>Algorithm</th>
+      <th>Success Rate</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Multi TD3</strong></td>
+      <td>0%</td>
+    </tr>
+    <tr>
+      <td><strong>Multi DDPG</strong></td>
+      <td>0%</td>
+    </tr>
+  </tbody>
+</table>
 
 ![Multi Robot Loss - ISAAC Sim](assets/images/multi_robot_loss.png)
 *Multi-Robot Training Loss in ISAAC Sim*
@@ -216,24 +294,97 @@ Evaluate and compare different machine learning algorithms for robot navigation 
 ### Reward Structures
 
 #### Single-Robot Rewards
-| Case            | DQN       | DDPG     | TD3  |
-|-----------------|-----------|----------|------|
-| Target Reached  | +200-500  | +120     | +100 |
-| Collision       | -200      | -100     | -100 |
-| Linear Step     | +5/-5     | -5       | -5   |
-| Angular Step    | +1/-1     | -1       | -1   |
-| DTG Improvement | +5        | Variable | -    |
-| HTG Improvement | +1        | -        | -    |
+<table>
+  <thead>
+    <tr>
+      <th>Case</th>
+      <th>DQN</th>
+      <th>DDPG</th>
+      <th>TD3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Target Reached</td>
+      <td>+200-500</td>
+      <td>+120</td>
+      <td>+100</td>
+    </tr>
+    <tr>
+      <td>Collision</td>
+      <td>-200</td>
+      <td>-100</td>
+      <td>-100</td>
+    </tr>
+    <tr>
+      <td>Linear Step</td>
+      <td>+5/-5</td>
+      <td>-5</td>
+      <td>-5</td>
+    </tr>
+    <tr>
+      <td>Angular Step</td>
+      <td>+1/-1</td>
+      <td>-1</td>
+      <td>-1</td>
+    </tr>
+    <tr>
+      <td>DTG Improvement</td>
+      <td>+5</td>
+      <td>Variable</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>HTG Improvement</td>
+      <td>+1</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
 
 #### Multi-Robot Rewards
-| Case            | Multi TD3 | Multi DQN |
-|-----------------|-----------|-----------|
-| Target Reached  | +200      | +500      |
-| Collision       | -200      | -100      |
-| Linear Step     | -2        | -5        |
-| Angular Step    | -2        | -1        |
-| DTG Improvement | +1        | +5        |
-| HTG Improvement | +1        | +1        |
+<table>
+  <thead>
+    <tr>
+      <th>Case</th>
+      <th>Multi TD3</th>
+      <th>Multi DQN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Target Reached</td>
+      <td>+200</td>
+      <td>+500</td>
+    </tr>
+    <tr>
+      <td>Collision</td>
+      <td>-200</td>
+      <td>-100</td>
+    </tr>
+    <tr>
+      <td>Linear Step</td>
+      <td>-2</td>
+      <td>-5</td>
+    </tr>
+    <tr>
+      <td>Angular Step</td>
+      <td>-2</td>
+      <td>-1</td>
+    </tr>
+    <tr>
+      <td>DTG Improvement</td>
+      <td>+1</td>
+      <td>+5</td>
+    </tr>
+    <tr>
+      <td>HTG Improvement</td>
+      <td>+1</td>
+      <td>+1</td>
+    </tr>
+  </tbody>
+</table>
 
 ### Key Parameters
 - **Learning Rate:** 0.0001-0.001
