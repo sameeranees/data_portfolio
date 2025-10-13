@@ -25,35 +25,49 @@ A comprehensive research project comparing Deep Reinforcement Learning algorithm
 
 ---
 
-## Race Against the Machine – 5G Enabled Tele-Operated vs Automated Driving
+## [Race Against the Machine – 5G Enabled Tele-Operated vs Automated Driving](race_against_machine.md)
 
-**Duration:** 2022-2023  
-**Technologies:** ROS 2, Python, C++, Docker  
+[Read detailed project information](race_against_machine.md)
+
+**Duration:** 2021 - 2022  
+**Technologies:** ROS, Python, C++, 5G Networks, SLAM, Web Technologies  
+**Institution:** TU Dortmund University - CNI  
 **Status:** Completed
 
-Master's project demonstrating the robustness and low latency of 5G networks in teleoperated driving through a competitive race between autonomous and remotely controlled vehicles. Individual contribution focused on developing and integrating SLAM algorithms for autonomous navigation.
+A comprehensive research project exploring 5G-enabled teleoperation and autonomous driving using the F1/10 platform. The project investigated the robustness of private 5G networks in teleoperated driving scenarios and implemented multiple autonomous driving approaches including direct teleoperation, indirect teleoperation, and vision-based autonomous navigation.
 
 **Key Contributions:**
-- SLAM algorithm development and integration
-- Real-time navigation system implementation
-- 5G network performance evaluation
-- Comparative analysis of autonomous vs teleoperated systems
+- 5G network performance evaluation for teleoperated driving
+- SLAM algorithm development and integration using Google Cartographer
+- Web-based digital twin with ROS integration for real-time visualization
+- Multi-modal driving system supporting autonomous and teleoperated modes
+- RESTful API development for network metrics monitoring
+
+**Project Link:**
+- [Official TU Dortmund Project Page](https://cni.etit.tu-dortmund.de/newsdetail/race-against-the-machine-22130/)
 
 ---
 
-## Bachelors Capstone Project - Swiftbot – Autonomous Delivery Robot
+## [SwiftBot: Autonomous Delivery Robot](swiftbot.md)
 
-**Duration:** 2020-2021  
-**Technologies:** ROS, Python, OpenCV, Android  
+[Read detailed project information](swiftbot.md)
+
+**Duration:** 2019-2020  
+**Technologies:** ROS, Python, OpenCV, Android, SLAM, Computer Vision  
 **Status:** Completed
 
-Bachelor's capstone project designing and building a ROS-based autonomous delivery robot with LiDAR navigation, Android app control, and secure delivery system featuring facial recognition and PIN verification. Capable of carrying 1kg payload with autonomous navigation capabilities.
+Bachelor's capstone project designing and building a comprehensive autonomous delivery robot system with SLAM-based navigation, facial recognition security, and mobile app integration. The system successfully demonstrates autonomous navigation in indoor environments with 95% delivery success rate and includes complete user management and admin panel systems.
 
 **Key Features:**
-- LiDAR-based autonomous navigation
-- Android application for remote control
-- Facial recognition security system
-- PIN verification for secure deliveries
-- 1kg payload capacity
-- Complete ROS integration
+- SLAM-based autonomous navigation using Google Cartographer
+- Multi-sensor obstacle detection and avoidance
+- Facial recognition security system with 95% accuracy
+- Android application for booking and tracking
+- Web-based admin panel for system management
+- RESTful API architecture for seamless communication
+- 5-10kg payload capacity with secure locking mechanism
+
+**Repository:**
+- [Swiftbot](https://github.com/sameeranees/SwiftBot)
+
 
