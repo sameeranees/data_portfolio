@@ -508,5 +508,3 @@ The work contributes to the growing field of autonomous robotics by providing a 
 - **Heading to Goal:** Navigation accuracy assessment
 
 ---
-
-*This thesis represents a comprehensive study in autonomous robot navigation, contributing valuable insights to the fields of robotics, machine learning, and logistics automation.*
