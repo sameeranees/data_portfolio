@@ -130,9 +130,9 @@ Evaluate and compare different machine learning algorithms for robot navigation 
 #### ISAAC Sim Results
 | Algorithm | Original | 1st Param | 2nd Param | 3rd Param |
 |-----------|----------|-----------|-----------|-----------|
-| **DQN** | 1.6% | 1.3% | 3.9% | 3.2% |
-| **DDPG** | 0% | 0.2% | 0% | 0% |
-| **TD3** | 0.4% | 0% | 0% | 0% |
+| **DQN**   | 1.6%     | 1.3%      | 3.9%      | 3.2%      |
+| **DDPG**  | 0%       | 0.2%      | 0%        | 0%        |
+| **TD3**   | 0.4%     | 0%        | 0%        | 0%        |
 
 *Success rates across different parameterizations*
 
@@ -143,11 +143,11 @@ Evaluate and compare different machine learning algorithms for robot navigation 
 *Success Rate Comparison - Original Implementation*
 
 #### Gazebo Results
-| Algorithm | Randomized Goals | Fixed Goals |
-|-----------|------------------|-------------|
-| **DQN** | 18% | 1.2% |
-| **DDPG** | 19.5% | 45.8% (78.4% after convergence) |
-| **TD3** | 4.6% | 2.72% |
+| Algorithm | Randomized Goals | Fixed Goals                    |
+|-----------|------------------|--------------------------------|
+| **DQN**   | 18%              | 1.2%                           |
+| **DDPG**  | 19.5%            | 45.8% (78.4% after convergence) |
+| **TD3**   | 4.6%             | 2.72%                          |
 
 ![Gazebo Loss Comparison](assets/images/gazebo_loss.png)
 *Training Loss Comparison in Gazebo Environment*
@@ -158,16 +158,16 @@ Evaluate and compare different machine learning algorithms for robot navigation 
 ### Multi-Robot Navigation Performance
 
 #### ISAAC Sim Multi-Robot Results
-| Algorithm | Success Rate |
-|-----------|--------------|
-| **Multi TD3** | 0.14% |
-| **Multi DQN** | 0% |
+| Algorithm    | Success Rate |
+|--------------|--------------|
+| **Multi TD3** | 0.14%        |
+| **Multi DQN** | 0%           |
 
 #### Gazebo Multi-Robot Results
-| Algorithm | Success Rate |
-|-----------|--------------|
-| **Multi TD3** | 0% |
-| **Multi DDPG** | 0% |
+| Algorithm     | Success Rate |
+|---------------|--------------|
+| **Multi TD3** | 0%           |
+| **Multi DDPG** | 0%           |
 
 ![Multi Robot Loss - ISAAC Sim](assets/images/multi_robot_loss.png)
 *Multi-Robot Training Loss in ISAAC Sim*
@@ -216,24 +216,24 @@ Evaluate and compare different machine learning algorithms for robot navigation 
 ### Reward Structures
 
 #### Single-Robot Rewards
-| Case | DQN | DDPG | TD3 |
-|------|-----|------|-----|
-| Target Reached | +200-500 | +120 | +100 |
-| Collision | -200 | -100 | -100 |
-| Linear Step | +5/-5 | -5 | -5 |
-| Angular Step | +1/-1 | -1 | -1 |
-| DTG Improvement | +5 | Variable | - |
-| HTG Improvement | +1 | - | - |
+| Case            | DQN       | DDPG     | TD3  |
+|-----------------|-----------|----------|------|
+| Target Reached  | +200-500  | +120     | +100 |
+| Collision       | -200      | -100     | -100 |
+| Linear Step     | +5/-5     | -5       | -5   |
+| Angular Step    | +1/-1     | -1       | -1   |
+| DTG Improvement | +5        | Variable | -    |
+| HTG Improvement | +1        | -        | -    |
 
 #### Multi-Robot Rewards
-| Case | Multi TD3 | Multi DQN |
-|------|-----------|-----------|
-| Target Reached | +200 | +500 |
-| Collision | -200 | -100 |
-| Linear Step | -2 | -5 |
-| Angular Step | -2 | -1 |
-| DTG Improvement | +1 | +5 |
-| HTG Improvement | +1 | +1 |
+| Case            | Multi TD3 | Multi DQN |
+|-----------------|-----------|-----------|
+| Target Reached  | +200      | +500      |
+| Collision       | -200      | -100      |
+| Linear Step     | -2        | -5        |
+| Angular Step    | -2        | -1        |
+| DTG Improvement | +1        | +5        |
+| HTG Improvement | +1        | +1        |
 
 ### Key Parameters
 - **Learning Rate:** 0.0001-0.001
