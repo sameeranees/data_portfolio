@@ -5,7 +5,7 @@ permalink: /master_thesis/
 # Master Thesis: Autonomous Navigation of Multi-Robot Systems in Dynamic Warehousing and Rescue Environments
 
 **Author:** Sameer Anees Jaliawala  
-**Institution:** TU Dortmund  
+**Institution:** TU Dortmund & Fraunhofer IML  
 **Program:** MSc Automation and Robotics   
 **Completion Date:** October 2024
 
