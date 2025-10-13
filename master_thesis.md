@@ -414,6 +414,7 @@ The research successfully integrated the DRL local planner with a global planner
 - Effective coordination between global and local planning modules
 
 ![Navigation Stack in RViz](assets/images/nav_stack_rviz.png)
+
 *Navigation Stack Integration in RViz*
 
 ---
