@@ -6,8 +6,7 @@ permalink: /master_thesis/
 
 **Author:** Sameer Anees Jaliawala  
 **Institution:** TU Dortmund  
-**Program:** MSc Automation and Robotics  
-**Supervisors:** Prof. Dr. Dr. h. c. Michael ten Hompel, Julia Freytag, M.Sc.  
+**Program:** MSc Automation and Robotics   
 **Completion Date:** October 2024
 
 ---

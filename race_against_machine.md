@@ -7,7 +7,6 @@ layout: page_no_title
 **Duration:** 2021 - 2022  
 **Technologies:** ROS, Python, C++, 5G Networks, SLAM, Web Technologies  
 **Institution:** TU Dortmund University - Chair of Communication Networks (CNI)  
-**Supervisors:** Cedrik Krieger, Tim Gebauer, Hendrik Schippers, Manuel Patchou  
 
 ---
 ## Source Code

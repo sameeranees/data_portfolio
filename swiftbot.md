@@ -7,13 +7,13 @@ permalink: /swiftbot/
 
 **Project:** Chhoti Si Kaavish - Autonomous Delivery Robot  
 **Institution:** Habib University  
-**Program:** Final Year Project
+**Program:** Final Year Project  
 **Completion Date:** 2020
 
 ---
 ## Source Code
  - [Swiftbot](https://github.com/sameeranees/SwiftBot)
-___
+---
 
 ## Project Overview
 
