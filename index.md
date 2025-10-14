@@ -8,7 +8,6 @@ layout: home_no_title
 
 **Duration:** 2023-2024  
 **Technologies:** ROS 2, ISAAC Sim, Gazebo, Python, PyTorch, CUDA  
-**Status:** Completed (October 2024)
 
 This thesis presents a comprehensive evaluation of Deep Reinforcement Learning algorithms (DQN, DDPG, TD3) for autonomous robot navigation across multiple simulation platforms. The research achieved a 78.4% success rate with DDPG in Gazebo environments and successfully demonstrated the extension of single-robot algorithms to multi-robot scenarios. The project includes complete integration with traditional navigation stacks and provides valuable insights for intralogistics and disaster management applications.
 
@@ -32,7 +31,6 @@ This thesis presents a comprehensive evaluation of Deep Reinforcement Learning a
 **Duration:** 2021 - 2022  
 **Technologies:** ROS, Python, C++, 5G Networks, SLAM, Web Technologies  
 **Institution:** TU Dortmund University - CNI  
-**Status:** Completed
 
 This research project explores 5G-enabled teleoperation and autonomous driving using the F1/10 platform. The study investigated the robustness of private 5G networks in teleoperated driving scenarios and implemented multiple autonomous driving approaches including direct teleoperation, indirect teleoperation, and vision-based autonomous navigation.
 
@@ -54,7 +52,6 @@ This research project explores 5G-enabled teleoperation and autonomous driving u
 
 **Duration:** 2019-2020  
 **Technologies:** ROS, Python, OpenCV, Android, SLAM, Computer Vision  
-**Status:** Completed
 
 This bachelor's capstone project involved designing and building a comprehensive autonomous delivery robot system with SLAM-based navigation, facial recognition security, and mobile app integration. The system successfully demonstrates autonomous navigation in indoor environments with a 95% delivery success rate and includes complete user management and admin panel systems.
 
@@ -69,5 +66,27 @@ This bachelor's capstone project involved designing and building a comprehensive
 
 **Repository:**
 - [Swiftbot](https://github.com/sameeranees/SwiftBot)
+
+---
+
+## [Student Academic Performance Prediction](data_science_project.md)
+
+[Read detailed project information](data_science_project.md)
+
+**Duration:** 2020  
+**Technologies:** Python, Pandas, Scikit-learn, NumPy, SciPy  
+**Institution:** Habib University - CS457 Data Science  
+
+This data science project analyzes student academic performance using machine learning techniques to predict student outcomes based on demographic, socioeconomic, and educational factors. The study implements and compares five different classification algorithms to identify the most effective approach for educational prediction modeling.
+
+**Key Contributions:**
+- Comprehensive analysis of 131 student records with 22 categorical features
+- Implementation and comparison of five machine learning algorithms
+- Naive Bayes classifier achieving highest accuracy (59.1%)
+- Data preprocessing and feature engineering for educational datasets
+- Performance evaluation across multiple classification approaches
+
+**Repository:**
+- [Data Science Project](https://github.com/sameeranees/DataScience-Project)
 
 
