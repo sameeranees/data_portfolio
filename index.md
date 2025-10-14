@@ -69,6 +69,29 @@ This bachelor's capstone project involved designing and building a comprehensive
 
 ---
 
+## [Tower Defense Game - OOP Final Project](oop_project.md)
+
+[Read detailed project information](oop_project.md)
+
+**Duration:** 2020  
+**Technologies:** C++, SDL2, Object-Oriented Programming  
+**Institution:** Habib University - OOP Course  
+**Status:** Completed
+
+A comprehensive tower defense game developed in C++ using SDL2 graphics library, demonstrating advanced object-oriented programming principles including inheritance, polymorphism, and design patterns. The game features multiple tower types, enemy varieties, and strategic gameplay mechanics.
+
+**Key Features:**
+- Multiple tower types with unique abilities and upgrade paths
+- Diverse enemy types including soldiers, tanks, and aircraft
+- Real-time graphics with sprite animations and sound effects
+- Save/load system for persistent game state
+- Advanced collision detection and projectile physics
+
+**Video Demo:**
+- [Tower Defense Game Demo](https://youtu.be/nxycKZMTpA4?si=UduSNTbNWGLAYiBQ)
+
+---
+
 ## [Student Academic Performance Prediction](data_science_project.md)
 
 [Read detailed project information](data_science_project.md)
@@ -88,5 +111,59 @@ This data science project analyzes student academic performance using machine le
 
 **Repository:**
 - [Data Science Project](https://github.com/sameeranees/DataScience-Project)
+
+---
+
+## [Credit Card Approval Prediction](data_science_case_study_1.md)
+
+[Read detailed project information](data_science_case_study_1.md)
+
+**Duration:** 2020  
+**Technologies:** Python, Pandas, Scikit-learn, Machine Learning  
+**Institution:** Habib University - Data Science Case Study  
+
+An automatic credit card approval predictor using machine learning techniques to analyze credit card applications and determine approval or rejection. The system automates the manual review process traditionally performed by banks, demonstrating practical application of machine learning in financial services.
+
+**Key Contributions:**
+- Implementation of multiple classification algorithms for credit assessment
+- Comprehensive data preprocessing and feature engineering
+- High-accuracy prediction model for automated decision making
+- Analysis of key factors influencing credit card approval decisions
+
+---
+
+## [Google Play Store App Analysis](data_science_case_study_2.md)
+
+[Read detailed project information](data_science_case_study_2.md)
+
+**Duration:** 2020  
+**Technologies:** Python, Pandas, Data Visualization, Sentiment Analysis  
+**Institution:** Habib University - Data Science Case Study  
+
+A comprehensive analysis of the Android app market examining over ten thousand applications in Google Play Store across different categories. The project identifies patterns, trends, and insights to develop strategies for app growth and user retention in the competitive mobile app ecosystem.
+
+**Key Contributions:**
+- Analysis of 10,000+ apps across various categories and genres
+- Sentiment analysis of user reviews and feedback
+- Market intelligence and competitive landscape analysis
+- Strategic recommendations for app development and investment
+
+---
+
+## [University Students Pandemic Analysis](microbes_project.md)
+
+[Read detailed project information](microbes_project.md)
+
+**Duration:** 2020  
+**Technologies:** Python, Pandas, Statistical Analysis, Data Visualization  
+**Institution:** Habib University - Microbes Project  
+
+An analysis of self-collected data from university students during the COVID-19 pandemic to understand the impact on student life, academic performance, and mental health. The study provides insights into how university students adapted to pandemic challenges and offers recommendations for educational institutions.
+
+**Key Contributions:**
+- Comprehensive survey analysis of 103 university students
+- Statistical analysis of pandemic impact on academic and mental health
+- Data visualization of student experiences and adaptation strategies
+- Research insights for educational policy and student support services
 
 
