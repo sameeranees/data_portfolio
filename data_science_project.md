@@ -8,7 +8,7 @@ permalink: /data_science_project/
 **Author:** Sameer Anees Jaliawala  
 **Institution:** Habib University  
 **Program:** CS457 - Data Science  
-**Completion Date:** 2020
+**Completion Date:** 2018
 
 ---
 

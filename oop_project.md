@@ -8,7 +8,7 @@ permalink: /oop_project/
 **Author:** Sameer Anees Jaliawala  
 **Institution:** Habib University  
 **Program:** Object-Oriented Programming Course  
-**Completion Date:** 2020
+**Completion Date:** 2017
 
 ---
 

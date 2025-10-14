@@ -7,7 +7,7 @@ layout: home_no_title
 
 [Read detailed project information](data_science_project.md)
 
-**Duration:** 2020  
+**Duration:** 2018  
 **Technologies:** Python, Pandas, Scikit-learn, NumPy, SciPy  
 **Institution:** Habib University - CS457 Data Science  
 
@@ -29,7 +29,7 @@ This data science project analyzes student academic performance using machine le
 
 [Read detailed project information](data_science_case_study_2.md)
 
-**Duration:** 2020  
+**Duration:** 2018  
 **Technologies:** Python, Pandas, Data Visualization, Sentiment Analysis  
 **Institution:** Habib University - Data Science Case Study  
 
@@ -47,7 +47,7 @@ A comprehensive analysis of the Android app market examining over ten thousand a
 
 [Read detailed project information](microbes_project.md)
 
-**Duration:** 2020  
+**Duration:** 2019  
 **Technologies:** Python, Pandas, Statistical Analysis, Data Visualization  
 **Institution:** Habib University - Microbes Project  
 
@@ -65,7 +65,7 @@ An analysis of self-collected data from university students during the COVID-19 
 
 [Read detailed project information](data_science_case_study_1.md)
 
-**Duration:** 2020  
+**Duration:** 2018  
 **Technologies:** Python, Pandas, Scikit-learn, Machine Learning  
 **Institution:** Habib University - Data Science Case Study  
 
@@ -150,7 +150,7 @@ This bachelor's capstone project involved designing and building a comprehensive
 
 [Read detailed project information](oop_project.md)
 
-**Duration:** 2020  
+**Duration:** 2017  
 **Technologies:** C++, SDL2, Object-Oriented Programming  
 **Institution:** Habib University - OOP Course  
 **Status:** Completed

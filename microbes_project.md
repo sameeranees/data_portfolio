@@ -8,7 +8,7 @@ permalink: /microbes_project/
 **Author:** Sameer Anees Jaliawala  
 **Institution:** Habib University  
 **Program:** Microbes Final Project  
-**Completion Date:** 2020
+**Completion Date:** 2019
 
 ---
 

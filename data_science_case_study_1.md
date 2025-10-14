@@ -8,7 +8,7 @@ permalink: /data_science_case_study_1/
 **Author:** Sameer Anees Jaliawala  
 **Institution:** Habib University  
 **Program:** Data Science Case Study  
-**Completion Date:** 2020
+**Completion Date:** 2018
 
 ---
 
