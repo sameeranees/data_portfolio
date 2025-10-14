@@ -1,7 +1,7 @@
 ---
 layout: home_no_title
 ---
-## List of Projects
+## List of Projects:
 ## [Master Thesis: Autonomous Navigation of Multi-Robot Systems in Dynamic Warehousing and Rescue Environments](master_thesis.md)
 
 [Read detailed thesis information](master_thesis.md)
