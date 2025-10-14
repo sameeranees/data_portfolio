@@ -129,13 +129,6 @@ The facial recognition system uses OpenCV-based computer vision with custom mach
 ![University Lab Map](assets/images/swiftbot_university_map.png)  
 *Detailed map of university laboratory created using SLAM technology*
 
-## Results and Performance
-
-- **Navigation Speed:** 0.5-1.0 m/s depending on environment
-- **Payload Capacity:** 5-10 kg maximum load
-- **Battery Life:** 4-6 hours continuous operation
-- **Recognition Time:** <2 seconds for facial authentication
-- **Success Rate:** 95% successful delivery completion
 
 ## Technical Specifications
 
