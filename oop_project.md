@@ -17,9 +17,11 @@ permalink: /oop_project/
 
 ## Video Demonstration
 
-**Gameplay Demo:** [Tower Defense Game Demo](https://youtu.be/nxycKZMTpA4?si=UduSNTbNWGLAYiBQ)
-
 The video demonstration showcases the complete gameplay experience, including tower placement, enemy waves, special abilities, and the overall game mechanics that make this project a comprehensive example of object-oriented programming in action.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nxycKZMTpA4" title="Tower Defense Game Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+**Direct Link:** [Tower Defense Game Demo](https://youtu.be/nxycKZMTpA4?si=UduSNTbNWGLAYiBQ)
 
 ---
 
