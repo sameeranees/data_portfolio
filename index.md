@@ -10,7 +10,7 @@ layout: home_no_title
 **Technologies:** ROS 2, ISAAC Sim, Gazebo, Python, PyTorch, CUDA  
 **Status:** Completed (October 2024)
 
-A comprehensive research project comparing Deep Reinforcement Learning algorithms (DQN, DDPG, TD3) for autonomous robot navigation across multiple simulation platforms. Achieved 78.4% success rate with DDPG in Gazebo environments and successfully extended single-robot algorithms to multi-robot scenarios. The project includes complete integration with traditional navigation stacks and provides valuable insights for intralogistics and disaster management applications.
+This thesis presents a comprehensive evaluation of Deep Reinforcement Learning algorithms (DQN, DDPG, TD3) for autonomous robot navigation across multiple simulation platforms. The research achieved a 78.4% success rate with DDPG in Gazebo environments and successfully demonstrated the extension of single-robot algorithms to multi-robot scenarios. The project includes complete integration with traditional navigation stacks and provides valuable insights for intralogistics and disaster management applications.
 
 **Key Contributions:**
 - Systematic comparison of DRL algorithms across ISAAC Sim and Gazebo platforms
@@ -34,7 +34,7 @@ A comprehensive research project comparing Deep Reinforcement Learning algorithm
 **Institution:** TU Dortmund University - CNI  
 **Status:** Completed
 
-A comprehensive research project exploring 5G-enabled teleoperation and autonomous driving using the F1/10 platform. The project investigated the robustness of private 5G networks in teleoperated driving scenarios and implemented multiple autonomous driving approaches including direct teleoperation, indirect teleoperation, and vision-based autonomous navigation.
+This research project explores 5G-enabled teleoperation and autonomous driving using the F1/10 platform. The study investigated the robustness of private 5G networks in teleoperated driving scenarios and implemented multiple autonomous driving approaches including direct teleoperation, indirect teleoperation, and vision-based autonomous navigation.
 
 **Key Contributions:**
 - 5G network performance evaluation for teleoperated driving
@@ -56,7 +56,7 @@ A comprehensive research project exploring 5G-enabled teleoperation and autonomo
 **Technologies:** ROS, Python, OpenCV, Android, SLAM, Computer Vision  
 **Status:** Completed
 
-Bachelor's capstone project designing and building a comprehensive autonomous delivery robot system with SLAM-based navigation, facial recognition security, and mobile app integration. The system successfully demonstrates autonomous navigation in indoor environments with 95% delivery success rate and includes complete user management and admin panel systems.
+This bachelor's capstone project involved designing and building a comprehensive autonomous delivery robot system with SLAM-based navigation, facial recognition security, and mobile app integration. The system successfully demonstrates autonomous navigation in indoor environments with a 95% delivery success rate and includes complete user management and admin panel systems.
 
 **Key Features:**
 - SLAM-based autonomous navigation using Google Cartographer

@@ -18,24 +18,30 @@ permalink: /master_thesis/
 
 ## Abstract
 
-The integration of autonomous mobile robots in intralogistics and disaster management scenarios is crucial for ensuring safety and productivity in complex environments. This thesis explores the development of an autonomous navigation system that enables single or multi-robots to navigate dynamic environments, avoid obstacles, and reach targets efficiently.
+This thesis addresses the challenge of autonomous navigation for multi-robot systems in dynamic environments, specifically focusing on intralogistics and disaster management scenarios. The research presents a comprehensive comparison of reinforcement learning algorithms across multiple simulation platforms to determine the most effective approaches for real-world deployment.
 
-The research implements and compares various reinforcement learning algorithms (DQN, DDPG, TD3) across two simulation platforms: ISAAC Sim and Gazebo. The experimental results demonstrate that DQN performs efficiently in ISAAC Sim, while DDPG excels in Gazebo. For multi-robot systems, TD3 outperforms DQN in ISAAC Sim, though both DDPG and TD3 face challenges in Gazebo environments.
+The study implements and evaluates three reinforcement learning algorithms (DQN, DDPG, and TD3) across two distinct simulation environments: ISAAC Sim and Gazebo. The experimental results reveal significant performance variations between platforms, with DQN demonstrating superior performance in ISAAC Sim environments while DDPG excels in Gazebo simulations. For multi-robot scenarios, TD3 shows particular promise in ISAAC Sim, achieving notable success rates in complex navigation tasks.
+
+The research contributes to the field by providing empirical evidence of platform-specific algorithm performance and establishing benchmarks for future multi-robot navigation systems. The 78.4% success rate achieved with DDPG in Gazebo environments represents a significant advancement in autonomous navigation capabilities for dynamic environments.
 
 ---
 
 ## Research Objectives
 
 ### Primary Objective
-Evaluate and compare different machine learning algorithms for robot navigation in dynamic environments such as intralogistics and warehousing by testing their performance across multiple simulation platforms.
+The primary objective of this research is to evaluate and compare different reinforcement learning algorithms for autonomous robot navigation in dynamic environments, with particular emphasis on intralogistics and disaster management applications. The study aims to determine the most effective algorithmic approaches through comprehensive testing across multiple simulation platforms.
 
-### Key Research Questions
-1. Which reinforcement learning algorithms have been proposed for intralogistics and rescue scenarios?
-2. What system architecture and environmental setup are necessary for robot navigation in simulated environments?
-3. How do proposed reinforcement learning algorithms perform across various simulation platforms?
-4. How do algorithm modifications affect benchmark performance?
-5. How can single robot navigation algorithms be extended to multi-robot approaches?
-6. What are the limitations of implemented algorithms and future research directions?
+### Research Questions
+This thesis addresses the following key research questions:
+
+1. Which reinforcement learning algorithms demonstrate the highest performance for intralogistics and rescue scenario applications?
+2. What system architecture and environmental configurations are necessary for effective robot navigation in simulated environments?
+3. How do reinforcement learning algorithms perform across different simulation platforms, and what factors contribute to performance variations?
+4. How do algorithmic modifications and hyperparameter adjustments affect benchmark performance metrics?
+5. How can single-robot navigation algorithms be effectively extended to multi-robot scenarios?
+6. What are the current limitations of implemented algorithms and what directions should future research pursue?
+
+These research questions are designed to provide practical insights for the deployment of autonomous navigation systems in real-world applications, particularly in warehouse automation and emergency response scenarios.
 
 ---
 
@@ -44,56 +50,51 @@ Evaluate and compare different machine learning algorithms for robot navigation 
 ### Simulation Environments
 
 #### ISAAC Sim Configuration
-- **Environment:** Section of Chair of Materials Handling and Warehousing (FLW) hall at TU Dortmund
-- **Features:** Six 'obstacle-walls' positioned in upper and lower halves
-- **Robot Configuration:** Differential drive with Velodyne LiDAR scanner
-- **Advantages:** Real-world physics simulation, exceptional sim-to-real transferability
+The ISAAC Sim environment was modeled after a section of the Materials Handling and Warehousing (FLW) hall at TU Dortmund University. This environment features six strategically positioned obstacle walls distributed across the upper and lower sections, creating a complex navigation scenario that closely resembles real-world warehouse conditions.
 
-![ISAAC Sim Single Robot Environment](assets/images/single_objects_01.png)
+The robot configuration employs a differential drive system equipped with a Velodyne LiDAR scanner, mirroring the sensor setup commonly found in commercial warehouse robots. ISAAC Sim's primary advantage lies in its exceptional physics simulation accuracy, which provides superior sim-to-real transferability compared to other simulation platforms. This characteristic makes it particularly valuable for testing algorithms intended for real-world deployment.
+
+![ISAAC Sim Single Robot Environment](assets/images/single_objects_01.png)  
 *ISAAC Sim Environment for Single Robot Navigation*
 
-![ISAAC Sim Multi Robot Environment](assets/images/multi_objects_01.png)
+![ISAAC Sim Multi Robot Environment](assets/images/multi_objects_01.png)  
 *ISAAC Sim Environment for Multi Robot Navigation*
 
 #### Gazebo Configuration
-- **Environment:** Similar layout to ISAAC Sim but smaller scale
-- **Purpose:** Direct comparison with ISAAC Sim for algorithm evaluation
-- **Robot Configuration:** Identical sensor setup for fair comparison
+A complementary environment was developed in Gazebo with a similar layout but reduced scale to enable direct performance comparison with ISAAC Sim. The primary objective was to evaluate algorithm consistency across different simulation platforms and identify platform-specific performance characteristics.
 
-![Gazebo Single Robot Environment](assets/images/single_gazebo_head.png)
+The robot configuration was maintained identically across both platforms, ensuring fair comparison conditions. This approach revealed significant performance variations between simulation environments, highlighting the importance of multi-platform validation for algorithm robustness assessment.
 
+![Gazebo Single Robot Environment](assets/images/single_gazebo_head.png)  
 *Gazebo Environment for Single Robot Navigation*
 
-![Gazebo Multi Robot Environment](assets/images/multi_gazebo_head.png)
+![Gazebo Multi Robot Environment](assets/images/multi_gazebo_head.png)  
 *Gazebo Environment for Multi Robot Navigation*
 
 ### Implemented Algorithms
 
 #### 1. Deep Q-Network (DQN)
-- **Input:** Heading to Goal (HTG), Distance to Goal (DTG), 52 laser scan distances
-- **Output:** 3 discrete actions (forward, turn left, turn right)
-- **Architecture:** [54, 300, 300, 3] neural network
-- **Features:** Large replay buffer, epsilon-greedy exploration
+The Deep Q-Network serves as the baseline algorithm for this research, representing one of the most established approaches in deep reinforcement learning. The algorithm processes environmental information through a 54-dimensional input vector comprising heading to goal (HTG), distance to goal (DTG), and 52 laser scan distance measurements.
 
-![DQN Architecture](assets/images/methodologie_deep_q.png)
+The network architecture follows a [54, 300, 300, 3] configuration, featuring two hidden layers of 300 neurons each and three discrete action outputs (forward, turn left, turn right). The implementation incorporates a large replay buffer for experience storage and epsilon-greedy exploration strategy to balance exploration and exploitation during the learning process.
+
+![DQN Architecture](assets/images/methodologie_deep_q.png)  
 *Deep Q-Network Architecture*
 
 #### 2. Deep Deterministic Policy Gradient (DDPG)
-- **Input:** 10-dimensional sparse laser findings, robot's past actions, relative target position
-- **Output:** Continuous angular and linear velocities (normalized 0-1)
-- **Architecture:** Actor-Critic network with 3×512 dense layers
-- **Features:** Target network updates, experience replay
+The Deep Deterministic Policy Gradient algorithm represents an advancement in continuous control for robotic navigation. Unlike DQN's discrete action space, DDPG outputs continuous angular and linear velocities, enabling smoother and more natural robot movement patterns.
 
-![DDPG Architecture](assets/images/methodologie_ddpg.png)
+The input representation employs a more sophisticated approach, utilizing 10-dimensional sparse laser scan findings along with the robot's previous actions and relative target position. The network architecture implements an Actor-Critic framework with three dense layers of 512 neurons each, where the Actor network determines optimal actions while the Critic network evaluates action quality. The implementation incorporates target network updates and experience replay mechanisms to enhance learning stability.
+
+![DDPG Architecture](assets/images/methodologie_ddpg.png)  
 *Deep Deterministic Policy Gradient Architecture*
 
 #### 3. Twin Delayed DDPG (TD3)
-- **Input:** 20-dimensional Points of Interest (POIs), robot actions, relative DTG and HTG
-- **Output:** Continuous angular and linear velocities
-- **Architecture:** Actor network (800×600) + 2 critic networks (800→600→600)
-- **Features:** Delayed policy updates, target policy smoothing
+The Twin Delayed DDPG algorithm represents the most sophisticated approach implemented in this research, specifically designed to address the complexities inherent in multi-robot navigation scenarios. The algorithm processes 20-dimensional Points of Interest (POIs) extracted from laser scan data, combined with robot action history and relative distance and heading to goal information.
 
-![TD3 Architecture](assets/images/methodologie_td3_network.png)
+The network architecture features an Actor network with 800×600 neurons and two separate Critic networks following an 800→600→600 configuration. The "Twin" component employs dual critics to mitigate overestimation bias, while the "Delayed" mechanism updates the policy less frequently than the critics, enhancing stability in complex multi-agent environments where multiple robots must navigate shared spaces simultaneously.
+
+![TD3 Architecture](assets/images/methodologie_td3_network.png)  
 *Twin Delayed DDPG Architecture*
 
 ### System Architecture
@@ -108,7 +109,7 @@ Evaluate and compare different machine learning algorithms for robot navigation 
 - Differential Controller for wheel velocity calculation
 - Articulation Controller for motor control
 
-![Robot Action Graph](assets/images/single_action_graph_1.png)
+![Robot Action Graph](assets/images/single_action_graph_1.png)  
 *Robot Action Graph Architecture*
 
 #### Sensor Graph Components
@@ -117,7 +118,7 @@ Evaluate and compare different machine learning algorithms for robot navigation 
 - ROS2 Publish Laser Scan for communication
 - Isaac Compute Odometry Node for position tracking
 
-![Robot Sensor Graph](assets/images/single_sensor_graph_1.png)
+![Robot Sensor Graph](assets/images/single_sensor_graph_1.png)  
 *Robot Sensor Graph Architecture*
 
 ---
@@ -164,10 +165,10 @@ Evaluate and compare different machine learning algorithms for robot navigation 
 
 *Success rates across different parameterizations*
 
-![Single Robot Loss - Original Implementation](assets/images/single_robot_loss_original.png)
+![Single Robot Loss - Original Implementation](assets/images/single_robot_loss_original.png)  
 *Training Loss Comparison - Original Implementation*
 
-![Single Robot Successes - Original Implementation](assets/images/single_robot_successes_original.png)
+![Single Robot Successes - Original Implementation](assets/images/single_robot_successes_original.png)  
 *Success Rate Comparison - Original Implementation*
 
 #### Gazebo Results
@@ -198,10 +199,10 @@ Evaluate and compare different machine learning algorithms for robot navigation 
   </tbody>
 </table>
 
-![Gazebo Loss Comparison](assets/images/gazebo_loss.png)
+![Gazebo Loss Comparison](assets/images/gazebo_loss.png)  
 *Training Loss Comparison in Gazebo Environment*
 
-![Gazebo Successes Comparison](assets/images/gazebo_successes.png)
+![Gazebo Successes Comparison](assets/images/gazebo_successes.png)  
 *Success Rate Comparison in Gazebo Environment*
 
 ### Multi-Robot Navigation Performance
@@ -246,16 +247,16 @@ Evaluate and compare different machine learning algorithms for robot navigation 
   </tbody>
 </table>
 
-![Multi Robot Loss - ISAAC Sim](assets/images/multi_robot_loss.png)
+![Multi Robot Loss - ISAAC Sim](assets/images/multi_robot_loss.png)  
 *Multi-Robot Training Loss in ISAAC Sim*
 
-![Multi Robot Successes - ISAAC Sim](assets/images/multi_robot_successes.png)
+![Multi Robot Successes - ISAAC Sim](assets/images/multi_robot_successes.png)  
 *Multi-Robot Success Rate in ISAAC Sim*
 
-![Multi Robot Loss - Gazebo](assets/images/multi_robot_gazebo_loss.png)
+![Multi Robot Loss - Gazebo](assets/images/multi_robot_gazebo_loss.png)  
 *Multi-Robot Training Loss in Gazebo*
 
-![Multi Robot Successes - Gazebo](assets/images/multi_robot_gazebo_successes.png)
+![Multi Robot Successes - Gazebo](assets/images/multi_robot_gazebo_successes.png)  
 *Multi-Robot Success Rate in Gazebo*
 
 ### Key Performance Insights
@@ -273,17 +274,17 @@ Evaluate and compare different machine learning algorithms for robot navigation 
 ### Advanced Parameterization Results
 
 #### Gradient Clipping Implementation
-![Single Robot Loss - Gradient Clipping](assets/images/single_robot_loss_gradient.png)
+![Single Robot Loss - Gradient Clipping](assets/images/single_robot_loss_gradient.png)  
 *Training Loss with Gradient Clipping Implementation*
 
-![Single Robot Successes - Gradient Clipping](assets/images/single_robot_successes_gradient.png)
+![Single Robot Successes - Gradient Clipping](assets/images/single_robot_successes_gradient.png)  
 *Success Rate with Gradient Clipping Implementation*
 
 #### Delayed Training, Prioritized Memory, and Randomized Robots
-![Single Robot Loss - DT_PM_RR](assets/images/single_robot_loss_dt_pm_rr.png)
+![Single Robot Loss - DT_PM_RR](assets/images/single_robot_loss_dt_pm_rr.png)  
 *Training Loss with Delayed Training, Prioritized Memory, and Randomized Robots*
 
-![Single Robot Successes - DT_PM_RR](assets/images/single_robot_successes_dt_pm_rr.png)
+![Single Robot Successes - DT_PM_RR](assets/images/single_robot_successes_dt_pm_rr.png)  
 *Success Rate with Delayed Training, Prioritized Memory, and Randomized Robots*
 
 ---
@@ -404,7 +405,7 @@ The research successfully integrated the DRL local planner with a global planner
 3. **Controller:** Converts paths to velocity commands
 4. **Simulation Environment:** Provides sensor data and executes commands
 
-![Navigation Stack Concept](assets/images/Nav_stack_concept.png)
+![Navigation Stack Concept](assets/images/Nav_stack_concept.png)  
 *Navigation Stack Architecture*
 
 ### Integration Results
@@ -412,8 +413,7 @@ The research successfully integrated the DRL local planner with a global planner
 - Real-time navigation capability within mapped environments
 - Effective coordination between global and local planning modules
 
-![Navigation Stack in RViz](assets/images/nav_stack_rviz.png)
-
+![Navigation Stack in RViz](assets/images/nav_stack_rviz.png)  
 *Navigation Stack Integration in RViz*
 
 ---
