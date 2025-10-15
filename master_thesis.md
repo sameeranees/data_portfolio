@@ -15,14 +15,17 @@ permalink: /master_thesis/
  - [Gazebo](https://github.com/sameeranees/DRL_robot_navigation_ros2)
 
 ---
+## Thesis Report  
+If you would like a look at the detailed report just send me an email: [sameeraneesj@gmail.com](mailto:sameeraneesj@gmail.com) 
 
+---
 ## Abstract
 
 This thesis addresses the challenge of autonomous navigation for multi-robot systems in dynamic environments, specifically focusing on intralogistics and disaster management scenarios. The research presents a comprehensive comparison of reinforcement learning algorithms across multiple simulation platforms to determine the most effective approaches for real-world deployment.
 
 The study implements and evaluates three reinforcement learning algorithms (DQN, DDPG, and TD3) across two distinct simulation environments: ISAAC Sim and Gazebo. The experimental results reveal significant performance variations between platforms, with DQN demonstrating superior performance in ISAAC Sim environments while DDPG excels in Gazebo simulations. For multi-robot scenarios, TD3 shows particular promise in ISAAC Sim, achieving notable success rates in complex navigation tasks.
 
-The research contributes to the field by providing empirical evidence of platform-specific algorithm performance and establishing benchmarks for future multi-robot navigation systems. The 78.4% success rate achieved with DDPG in Gazebo environments represents a significant advancement in autonomous navigation capabilities for dynamic environments.
+The research contributes to the field by providing empirical evidence of platform-specific algorithm performance and establishing benchmarks for future multi-robot navigation systems.
 
 ---
 

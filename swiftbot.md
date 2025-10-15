@@ -15,6 +15,10 @@ permalink: /swiftbot/
  - [Swiftbot](https://github.com/sameeranees/SwiftBot)
  
 ---
+## Thesis Report  
+If you would like a look at the detailed report just send me an email: [sameeraneesj@gmail.com](mailto:sameeraneesj@gmail.com) 
+
+---
 
 ## Project Overview
 
