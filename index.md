@@ -2,6 +2,83 @@
 layout: home_no_title
 ---
 ## List of Projects:
+
+## [Student Academic Performance Prediction](data_science_project.md)
+
+[Read detailed project information](data_science_project.md)
+
+**Duration:** 2018  
+**Technologies:** Python, Pandas, Scikit-learn, NumPy, SciPy  
+**Institution:** Habib University - CS457 Data Science  
+
+This data science project analyzes student academic performance using machine learning techniques to predict student outcomes based on demographic, socioeconomic, and educational factors. The study implements and compares five different classification algorithms to identify the most effective approach for educational prediction modeling.
+
+**Key Contributions:**
+- Comprehensive analysis of 131 student records with 22 categorical features
+- Implementation and comparison of five machine learning algorithms
+- Naive Bayes classifier achieving highest accuracy (59.1%)
+- Data preprocessing and feature engineering for educational datasets
+- Performance evaluation across multiple classification approaches
+
+**Repository:**
+- [Data Science Project](https://github.com/sameeranees/DataScience-Project)
+
+---
+
+## [Google Play Store App Analysis](data_science_case_study_2.md)
+
+[Read detailed project information](data_science_case_study_2.md)
+
+**Duration:** 2018  
+**Technologies:** Python, Pandas, Data Visualization, Sentiment Analysis  
+**Institution:** Habib University - Data Science Case Study  
+
+A comprehensive analysis of the Android app market examining over ten thousand applications in Google Play Store across different categories. The project identifies patterns, trends, and insights to develop strategies for app growth and user retention in the competitive mobile app ecosystem.
+
+**Key Contributions:**
+- Analysis of 10,000+ apps across various categories and genres
+- Sentiment analysis of user reviews and feedback
+- Market intelligence and competitive landscape analysis
+- Strategic recommendations for app development and investment
+
+---
+
+## [University Students Pandemic Analysis](microbes_project.md)
+
+[Read detailed project information](microbes_project.md)
+
+**Duration:** 2019  
+**Technologies:** Python, Pandas, Statistical Analysis, Data Visualization  
+**Institution:** Habib University - Microbes Project  
+
+An analysis of self-collected data from university students during the COVID-19 pandemic to understand the impact on student life, academic performance, and mental health. The study provides insights into how university students adapted to pandemic challenges and offers recommendations for educational institutions.
+
+**Key Contributions:**
+- Comprehensive survey analysis of 103 university students
+- Statistical analysis of pandemic impact on academic and mental health
+- Data visualization of student experiences and adaptation strategies
+- Research insights for educational policy and student support services
+
+---
+
+## [Credit Card Approval Prediction](data_science_case_study_1.md)
+
+[Read detailed project information](data_science_case_study_1.md)
+
+**Duration:** 2018  
+**Technologies:** Python, Pandas, Scikit-learn, Machine Learning  
+**Institution:** Habib University - Data Science Case Study  
+
+An automatic credit card approval predictor using machine learning techniques to analyze credit card applications and determine approval or rejection. The system automates the manual review process traditionally performed by banks, demonstrating practical application of machine learning in financial services.
+
+**Key Contributions:**
+- Implementation of multiple classification algorithms for credit assessment
+- Comprehensive data preprocessing and feature engineering
+- High-accuracy prediction model for automated decision making
+- Analysis of key factors influencing credit card approval decisions
+
+---
+
 ## [Master Thesis: Autonomous Navigation of Multi-Robot Systems in Dynamic Warehousing and Rescue Environments](master_thesis.md)
 
 [Read detailed thesis information](master_thesis.md)
@@ -89,81 +166,5 @@ A comprehensive tower defense game developed in C++ using SDL2 graphics library,
 
 **Video Demo:**
 - [Tower Defense Game Demo](https://youtu.be/nxycKZMTpA4?si=UduSNTbNWGLAYiBQ)
-
----
-
-## [Student Academic Performance Prediction](data_science_project.md)
-
-[Read detailed project information](data_science_project.md)
-
-**Duration:** 2018  
-**Technologies:** Python, Pandas, Scikit-learn, NumPy, SciPy  
-**Institution:** Habib University - CS457 Data Science  
-
-This data science project analyzes student academic performance using machine learning techniques to predict student outcomes based on demographic, socioeconomic, and educational factors. The study implements and compares five different classification algorithms to identify the most effective approach for educational prediction modeling.
-
-**Key Contributions:**
-- Comprehensive analysis of 131 student records with 22 categorical features
-- Implementation and comparison of five machine learning algorithms
-- Naive Bayes classifier achieving highest accuracy (59.1%)
-- Data preprocessing and feature engineering for educational datasets
-- Performance evaluation across multiple classification approaches
-
-**Repository:**
-- [Data Science Project](https://github.com/sameeranees/DataScience-Project)
-
----
-
-## [Credit Card Approval Prediction](data_science_case_study_1.md)
-
-[Read detailed project information](data_science_case_study_1.md)
-
-**Duration:** 2018  
-**Technologies:** Python, Pandas, Scikit-learn, Machine Learning  
-**Institution:** Habib University - Data Science Case Study  
-
-An automatic credit card approval predictor using machine learning techniques to analyze credit card applications and determine approval or rejection. The system automates the manual review process traditionally performed by banks, demonstrating practical application of machine learning in financial services.
-
-**Key Contributions:**
-- Implementation of multiple classification algorithms for credit assessment
-- Comprehensive data preprocessing and feature engineering
-- High-accuracy prediction model for automated decision making
-- Analysis of key factors influencing credit card approval decisions
-
----
-
-## [Google Play Store App Analysis](data_science_case_study_2.md)
-
-[Read detailed project information](data_science_case_study_2.md)
-
-**Duration:** 2018  
-**Technologies:** Python, Pandas, Data Visualization, Sentiment Analysis  
-**Institution:** Habib University - Data Science Case Study  
-
-A comprehensive analysis of the Android app market examining over ten thousand applications in Google Play Store across different categories. The project identifies patterns, trends, and insights to develop strategies for app growth and user retention in the competitive mobile app ecosystem.
-
-**Key Contributions:**
-- Analysis of 10,000+ apps across various categories and genres
-- Sentiment analysis of user reviews and feedback
-- Market intelligence and competitive landscape analysis
-- Strategic recommendations for app development and investment
-
----
-
-## [University Students Pandemic Analysis](microbes_project.md)
-
-[Read detailed project information](microbes_project.md)
-
-**Duration:** 2019  
-**Technologies:** Python, Pandas, Statistical Analysis, Data Visualization  
-**Institution:** Habib University - Microbes Project  
-
-An analysis of self-collected data from university students during the COVID-19 pandemic to understand the impact on student life, academic performance, and mental health. The study provides insights into how university students adapted to pandemic challenges and offers recommendations for educational institutions.
-
-**Key Contributions:**
-- Comprehensive survey analysis of 103 university students
-- Statistical analysis of pandemic impact on academic and mental health
-- Data visualization of student experiences and adaptation strategies
-- Research insights for educational policy and student support services
 
 
